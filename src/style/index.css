@@ -1,0 +1,52 @@
+:root{
+
+    /* - Family: [Poppins](https://fonts.google.com/specimen/Poppins) */
+    /* - Weights: 400i, 700, 800i */
+
+    --family:'Poppins';
+
+    /* ## Colors */
+
+/* ### Primary */
+
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+
+/* ### Neutral */
+
+--White: rgb(255, 255, 255);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+--Font-size-inputs: 32px;
+
+--time-duration:1500ms;
+
+}
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+
+    font-family: var(--family);
+
+    background-color: var(--Off-white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+   

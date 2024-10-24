@@ -1,0 +1,159 @@
+
+main{
+
+    background-color: white;
+    padding: 1em;    
+    border-radius: 1.6em;
+    max-width: 40em;
+    border-bottom-right-radius: 4em;
+
+}
+
+
+main >:first-child{
+
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid var(--Smokey-grey);
+    padding: 2em 0 4em 0;
+}
+
+main >:first-child div{
+
+    margin: auto 5px;
+    max-width: 6em;
+}
+
+.illustration{
+
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+.gray{
+
+    color: var(--Smokey-grey);
+    transition: var(--time-duration);
+
+}
+
+.red{
+
+    color: var(--Light-red);
+
+}
+
+input{
+
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    cursor: pointer;
+    caret-color: var(--Purple);
+}
+
+.grayBorder{
+
+    border: 1px solid var(--Light-grey);
+    transition: var(--time-duration);
+
+}
+
+.redBorder{
+
+    border: 1px solid var(--Light-red);
+
+}
+
+input:focus{
+
+    outline:1px solid var(--Purple);
+}
+
+
+.hidden{
+
+    opacity: 0;
+    transition:var(--time-duration);
+    color: var(--Light-red);
+
+
+}
+
+.visible{
+
+    opacity: 1;
+    color: var(--Light-red);
+
+
+}
+
+picture{
+
+    position: absolute;
+    background-color: var(--Purple);
+    bottom: -28px;
+    left: 43%;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+picture:hover{
+
+    background-color: var(--Off-black);
+}
+
+img{
+
+    
+    width: 1.5em;
+
+}
+
+main >:last-child{
+
+    font-size: var(--Font-size-inputs);
+    padding: 1.5em 0;
+
+}
+
+h1{
+
+    margin: -0.4em 0;
+    color: var(--Off-black);
+    
+}
+
+main span{
+
+    color: var(--Purple);
+  
+}
+
+@media (min-width:500px){
+
+    main{
+
+        width: 30em;
+    }
+
+
+    picture{
+
+        left: 89%;
+    }
+
+
+
+
+}
