@@ -103,9 +103,22 @@ export default function Main(){
         
         const date=new Date();
 
-        const absDay=(Math.abs(date.getDate()-Number(day.getValue())));
-        const absMonth=(Math.abs(date.getMonth()-Number(month.getValue())));
-        const absYear=(Math.abs(date.getFullYear()-Number(year.getValue())));
+        let absDay=(date.getDate()-Number(day.getValue()));
+        let absMonth=(date.getMonth()+1)-Number(month.getValue());
+        let absYear=(date.getFullYear()-Number(year.getValue()));
+
+        if(absMonth<0){
+
+          absYear--;
+          absMonth=12+absMonth;
+
+        }
+
+        if(absDay<0){
+
+          absMonth--;
+          absDay=30+absDay;
+        }
     
         setDays(absDay);
         setMonths(absMonth);

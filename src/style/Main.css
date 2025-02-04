@@ -131,6 +131,7 @@ h1{
 
     margin: -0.4em 0;
     color: var(--Off-black);
+    font-size: 2rem;
     
 }
 
@@ -153,7 +154,10 @@ main span{
         left: 89%;
     }
 
+    h1{
 
+        font-size: 3.5rem;
+    }
 
 
 }
