@@ -139,7 +139,7 @@ export default function Main(){
     </div>
 
     <picture onClick={displayAge} >
-    <img src="../assets/images/icon-arrow.svg" alt="arrow icon" />
+    <img src="/icon-arrow.svg" alt="arrow icon" />
     </picture>
     </div>
     
